@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* #ff6b4a #5bbad5  */
+
+*:focus {
+    outline: solid 3px #639af9;
+    outline-style: solid;
+    outline-offset: 5px;
+    visibility: visible;
+    opacity: 1;
+    outline-style: inset;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1;
+    color: #000000;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 9.6rem 1fr;
+}
+
+.nav {
+    height: 100vh;
+    background-color: #ff6b4a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-links--top,
+.nav-links--bottom {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link--main,
+.nav-link {
+    width: 100%;
+}
+
+.nav-link--main a:link,
+.nav-link--main a:visited,
+.nav-link a:link,
+.nav-link a:visited {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.nav-link--main a {
+    padding: 2.85rem 2rem;
+}
+
+.nav-link a {
+    padding: 2rem;
+}
+
+.nav-link--main a:hover,
+.nav-link--main a:active,
+.nav-link a:hover,
+.nav-link a:active {
+    background-color: #e56042;
+}
+
+.nav-link a {
+    text-decoration: none;
+}
+
+.nav-link svg,
+.nav-link p {
+    color: #000000;
+    font-weight: 700;
+}
+
+.nav-link svg {
+    height: 2rem;
+}
+
+.nav-link p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 8.1rem 1fr;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.drop-down,
+.btn--new-project {
+    width: 19rem;
+    height: 4rem;
+    padding: 0 1.6rem;
+}
+
+.drop-down {
+    background-color: #f1f1f1;
+}
+
+.btn--new-project,
+.btn--new-project:visited {
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    background-color: #ff6b4a;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.1rem;
+    transition: all 0.3s;
+}
+
+.btn--new-project:hover,
+.btn--new-project:active {
+    background-color: #e56042;
+}
+
+.dashboard-main {
+    background-color: #f7f7f7;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.project-container {
+    padding: 4.8rem 0;
+}
+
+.project {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #ffffff;
+    width: 102.4rem;
+    height: 10.095rem;
+    padding: 2.4rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.icon-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name,
+.status,
+.requests {
+    color: #333333;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-title svg {
+    color: #ff6b4a;
+}
+
+.date-created {
+    color: #666666;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.16rem;
+}
+
+.status svg,
+.requests svg {
+    width: 1.8rem;
+    height: 1.6rem;
+}
+
+.status--active,
+.request-number {
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+}
+
+.status--active {
+    color: #27dc8e;
+}
+
+.request-number {
+    color: #000000;
+}
+
+.btn--settings-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btn--settings svg {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.btn--settings {
+    color: #666666;
+    background-color: #e5e5e5;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    width: 12.5rem;
+    height: 4rem;
+    padding: 0 1.6rem;
+    border: none;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

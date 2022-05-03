@@ -1,0 +1,100 @@
+/* #ff6b4a #5bbad5  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: solid 3px #639af9;
+    outline-style: solid;
+    outline-offset: 5px;
+    visibility: visible;
+    opacity: 1;
+    outline-style: inset;
+}
+
+html {
+    font-size: 62.5%;
+    tab-size: 4;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1;
+    color: #000000;
+}
+
+/* ************************ */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************ */
+
+.logo {
+    width: 17.2rem;
+    height: 8.2rem;
+    margin: 6.4rem 0;
+}
+
+.login-height {
+    height: 37.6rem;
+}
+
+.reset-height {
+    height: 17.25rem;
+}
+
+.margin-bottom--24 {
+    margin-bottom: 2.4rem;
+}
+
+.container {
+    max-width: 102.4rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap--18 {
+    gap: 1.8rem;
+}
+
+.gap--15 {
+    gap: 1.5rem;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols--6 {
+    grid-template-columns: repeat(6, 1fr);
+}
