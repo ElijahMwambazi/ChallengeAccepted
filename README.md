@@ -1,2 +1,2 @@
 # CHALLENGE ACCEPTED
-## Taking On The World One Challenge At A Time 🤡
+## Taking On The World One Coding Challenge At A Time 🤡
