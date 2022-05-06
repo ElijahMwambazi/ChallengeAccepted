@@ -154,3 +154,32 @@ function beautifulDays(i, j, k) {
 }
 
 console.log(beautifulDays(20, 23, 6));
+
+// Designer PDF Viewer
+const alpha = Array.from(Array(26)).map((temp, i) => i + 97);
+const alphabet = alpha.map((x) => String.fromCharCode(x));
+const heights = [
+    1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5,
+    7,
+];
+const word = "zaba";
+
+let letterIndex = [];
+let max = 0;
+
+function designerPdfViewer(height, word) {
+    for (i = 0; i < word.length; i++) {
+        letterIndex.push(alphabet.indexOf(word[i]));
+
+        for (j = 0; j < letterIndex.length; j++) {
+            if (height[letterIndex[j]] > max) {
+                max = height[letterIndex[j]];
+            }
+        }
+    }
+    const area = max * word.length;
+
+    return area;
+}
+
+console.log(designerPdfViewer(heights, word));
